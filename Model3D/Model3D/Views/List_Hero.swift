@@ -100,6 +100,7 @@ struct List_Hero: View {
                                     self.linkSelection = 1
                                 }){
                                     Text("Play Now")
+                                    // some chnages added
                                 }
                 //
                 //                Button(action:{
