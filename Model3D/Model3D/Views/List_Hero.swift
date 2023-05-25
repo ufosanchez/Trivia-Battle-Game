@@ -101,6 +101,7 @@ struct List_Hero: View {
                                 }){
                                     Text("Play Now")
                                     // some chnages added
+                                    //THANK YOU
                                 }
                 //
                 //                Button(action:{
