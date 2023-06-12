@@ -46,7 +46,7 @@ struct GameView: View {
                 }// .alert ends
             
             
-            Text("Enemy : \(selectedEnemy.name) - Healt : \(healtEnemy) - Champion Helat \(healtChampion)")
+            Text("Enemy : \(selectedEnemy.name) - Health : \(healtEnemy) - Champion Health \(healtChampion)")
                 .font(.custom("NerkoOne-Regular", size: 18))
             
             VStack{

@@ -16,9 +16,11 @@ struct ChampionDetailView: View {
     
     var body: some View {
         HStack{
+            Spacer()
             SceneView(scene: {
                 let scene = SCNScene(named: "\(self.championInfo.name).scn")!
-                scene.background.contents = UIColor.systemGray
+                let backgroundImage = UIImage(named: "Character_background.jpg")
+                scene.background.contents = backgroundImage
                 return scene}()
                       ,options: [.autoenablesDefaultLighting, .allowsCameraControl])
             .frame(width: UIScreen.main.bounds.width/3, height: UIScreen.main.bounds.height)
@@ -27,13 +29,14 @@ struct ChampionDetailView: View {
             VStack{
                 Text("Champion Name: \(self.championInfo.name)")
                     .font(Font.custom("Baskerville", size: 24)).bold()
-                Text("Base Attack: \(self.championInfo.base_attack)")
-                Text("Base Health: \(self.championInfo.base_health)")
-                Text("Description: \(self.championInfo.description)")
+                Text("Base Attack: \(self.championInfo.base_attack)") .font(Font.custom("Baskerville", size: 18))
+                Text("Base Health: \(self.championInfo.base_health)") .font(Font.custom("Baskerville", size: 18))
+                Text("\n\(self.championInfo.description)") .font(Font.custom("Baskerville", size: 16)).bold()
             }
         }
         .foregroundColor(Color.yellow)
-        .background(Color.gray)
+        .background(LinearGradient( colors: [.black, .gray], startPoint: .topLeading, endPoint: .bottomTrailing)
+            .edgesIgnoringSafeArea(.all))
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {

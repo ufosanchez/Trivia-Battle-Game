@@ -6,24 +6,32 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 struct MainCraftChampView: View {
     
     private let championInfo : ChampionInfo = ChampionInfo()
     private let index : Index = Index()
     
+    @EnvironmentObject var fireDBHelper : FireDBHelper
+    
     @State private var root : RootView = .Champion
     
     var body: some View {
-//        NavigationView{
+       VStack{
             switch root{
             case .Crafting:
                 CraftingView(rootScreen : $root).environmentObject(index)
             case .Champion:
                 ChampionView(rootScreen : $root).environmentObject(championInfo).environmentObject(index)
             }
-//        }
+        }
+       .onAppear{
+           self.fireDBHelper.getMaterials()
+       }
     }
+
 }
 
 struct MainCraftChampView_Previews: PreviewProvider {
