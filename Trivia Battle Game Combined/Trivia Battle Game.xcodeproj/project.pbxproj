@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12AB49D12A34DC8F002DD25B /* Tracer.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49D02A34DC8F002DD25B /* Tracer.obj */; };
+		12AB49D32A34DDB4002DD25B /* Tracer Body D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49D22A34DDB4002DD25B /* Tracer Body D.png */; };
+		12AB49D52A34DE1B002DD25B /* Tracer Eyes D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49D42A34DE1B002DD25B /* Tracer Eyes D.png */; };
+		12AB49D72A34DE2A002DD25B /* Tracer Goggles Lens D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49D62A34DE2A002DD25B /* Tracer Goggles Lens D.png */; };
+		12AB49D92A34DE31002DD25B /* Tracer Hair D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49D82A34DE31002DD25B /* Tracer Hair D.png */; };
+		12AB49DB2A34DE86002DD25B /* Helmet.scn in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49DA2A34DE86002DD25B /* Helmet.scn */; };
+		12AB49DD2A34DF39002DD25B /* Boots.scn in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49DC2A34DF39002DD25B /* Boots.scn */; };
+		12AB49DF2A34DF67002DD25B /* Tracer Rings D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49DE2A34DF67002DD25B /* Tracer Rings D.png */; };
+		12AB49E12A34DF96002DD25B /* Tracer.scn in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49E02A34DF96002DD25B /* Tracer.scn */; };
+		12AB49E52A34E480002DD25B /* Doomfist_D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49E42A34E480002DD25B /* Doomfist_D.png */; };
+		12AB49E72A34E485002DD25B /* Doomfist_Eye_D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49E62A34E485002DD25B /* Doomfist_Eye_D.png */; };
+		12AB49E92A34E48B002DD25B /* Doomfist_Fist_D.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49E82A34E48B002DD25B /* Doomfist_Fist_D.png */; };
+		12AB49EB2A34E638002DD25B /* Doomfist.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49EA2A34E638002DD25B /* Doomfist.obj */; };
+		12AB49ED2A34E6C4002DD25B /* Doomfist.scn in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49EC2A34E6C4002DD25B /* Doomfist.scn */; };
+		12AB49EF2A34EFDB002DD25B /* Materials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AB49EE2A34EFDB002DD25B /* Materials.swift */; };
+		12AB49F12A3527FC002DD25B /* Widowmaker.scn in Resources */ = {isa = PBXBuildFile; fileRef = 12AB49F02A3527FC002DD25B /* Widowmaker.scn */; };
+		12AB49F52A362584002DD25B /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AB49F42A362584002DD25B /* RewardsView.swift */; };
 		ED243FB82A26426700309A71 /* regirock.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED243FB72A26426700309A71 /* regirock.gif */; };
 		ED243FBA2A26427400309A71 /* regigigas.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED243FB92A26427400309A71 /* regigigas.gif */; };
 		ED243FBC2A26428000309A71 /* regice.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED243FBB2A26428000309A71 /* regice.gif */; };
@@ -99,14 +116,11 @@
 		ED2841552A32344800F37554 /* 12307_Boots_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED28414D2A32344800F37554 /* 12307_Boots_diffuse.jpg */; };
 		ED2841562A32344800F37554 /* 13586_Steel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED28414E2A32344800F37554 /* 13586_Steel.jpg */; };
 		ED2841592A32351300F37554 /* Widowmaker.obj in Resources */ = {isa = PBXBuildFile; fileRef = ED2841572A32351200F37554 /* Widowmaker.obj */; };
-		ED28415A2A32351300F37554 /* Widowmaker.scn in Resources */ = {isa = PBXBuildFile; fileRef = ED2841582A32351300F37554 /* Widowmaker.scn */; };
 		ED28415D2A32352900F37554 /* Weapon.obj in Resources */ = {isa = PBXBuildFile; fileRef = ED28415B2A32352900F37554 /* Weapon.obj */; };
 		ED28415E2A32352900F37554 /* Weapon.scn in Resources */ = {isa = PBXBuildFile; fileRef = ED28415C2A32352900F37554 /* Weapon.scn */; };
-		ED2841612A32353300F37554 /* Helmet.scn in Resources */ = {isa = PBXBuildFile; fileRef = ED28415F2A32353200F37554 /* Helmet.scn */; };
 		ED2841622A32353300F37554 /* Helmet.obj in Resources */ = {isa = PBXBuildFile; fileRef = ED2841602A32353300F37554 /* Helmet.obj */; };
 		ED2841652A32354A00F37554 /* Legs.obj in Resources */ = {isa = PBXBuildFile; fileRef = ED2841632A32354A00F37554 /* Legs.obj */; };
 		ED2841662A32354A00F37554 /* Legs.scn in Resources */ = {isa = PBXBuildFile; fileRef = ED2841642A32354A00F37554 /* Legs.scn */; };
-		ED2841692A32355500F37554 /* Boots.scn in Resources */ = {isa = PBXBuildFile; fileRef = ED2841672A32355500F37554 /* Boots.scn */; };
 		ED28416A2A32355500F37554 /* Boots.obj in Resources */ = {isa = PBXBuildFile; fileRef = ED2841682A32355500F37554 /* Boots.obj */; };
 		ED28416D2A32356A00F37554 /* Armor.obj in Resources */ = {isa = PBXBuildFile; fileRef = ED28416B2A32356900F37554 /* Armor.obj */; };
 		ED28416E2A32356A00F37554 /* Armor.scn in Resources */ = {isa = PBXBuildFile; fileRef = ED28416C2A32356A00F37554 /* Armor.scn */; };
@@ -244,6 +258,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12AB49D02A34DC8F002DD25B /* Tracer.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tracer.obj; sourceTree = "<group>"; };
+		12AB49D22A34DDB4002DD25B /* Tracer Body D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tracer Body D.png"; sourceTree = "<group>"; };
+		12AB49D42A34DE1B002DD25B /* Tracer Eyes D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tracer Eyes D.png"; sourceTree = "<group>"; };
+		12AB49D62A34DE2A002DD25B /* Tracer Goggles Lens D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tracer Goggles Lens D.png"; sourceTree = "<group>"; };
+		12AB49D82A34DE31002DD25B /* Tracer Hair D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tracer Hair D.png"; sourceTree = "<group>"; };
+		12AB49DA2A34DE86002DD25B /* Helmet.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Helmet.scn; sourceTree = "<group>"; };
+		12AB49DC2A34DF39002DD25B /* Boots.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Boots.scn; sourceTree = "<group>"; };
+		12AB49DE2A34DF67002DD25B /* Tracer Rings D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tracer Rings D.png"; sourceTree = "<group>"; };
+		12AB49E02A34DF96002DD25B /* Tracer.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Tracer.scn; sourceTree = "<group>"; };
+		12AB49E42A34E480002DD25B /* Doomfist_D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doomfist_D.png; sourceTree = "<group>"; };
+		12AB49E62A34E485002DD25B /* Doomfist_Eye_D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doomfist_Eye_D.png; sourceTree = "<group>"; };
+		12AB49E82A34E48B002DD25B /* Doomfist_Fist_D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doomfist_Fist_D.png; sourceTree = "<group>"; };
+		12AB49EA2A34E638002DD25B /* Doomfist.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doomfist.obj; sourceTree = "<group>"; };
+		12AB49EC2A34E6C4002DD25B /* Doomfist.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Doomfist.scn; sourceTree = "<group>"; };
+		12AB49EE2A34EFDB002DD25B /* Materials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materials.swift; sourceTree = "<group>"; };
+		12AB49F02A3527FC002DD25B /* Widowmaker.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Widowmaker.scn; sourceTree = "<group>"; };
+		12AB49F42A362584002DD25B /* RewardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
 		ED243FB72A26426700309A71 /* regirock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = regirock.gif; sourceTree = "<group>"; };
 		ED243FB92A26427400309A71 /* regigigas.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = regigigas.gif; sourceTree = "<group>"; };
 		ED243FBB2A26428000309A71 /* regice.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = regice.gif; sourceTree = "<group>"; };
@@ -336,14 +367,11 @@
 		ED28414D2A32344800F37554 /* 12307_Boots_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12307_Boots_diffuse.jpg; sourceTree = "<group>"; };
 		ED28414E2A32344800F37554 /* 13586_Steel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13586_Steel.jpg; sourceTree = "<group>"; };
 		ED2841572A32351200F37554 /* Widowmaker.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Widowmaker.obj; sourceTree = "<group>"; };
-		ED2841582A32351300F37554 /* Widowmaker.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Widowmaker.scn; sourceTree = "<group>"; };
 		ED28415B2A32352900F37554 /* Weapon.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Weapon.obj; sourceTree = "<group>"; };
 		ED28415C2A32352900F37554 /* Weapon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Weapon.scn; sourceTree = "<group>"; };
-		ED28415F2A32353200F37554 /* Helmet.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Helmet.scn; sourceTree = "<group>"; };
 		ED2841602A32353300F37554 /* Helmet.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Helmet.obj; sourceTree = "<group>"; };
 		ED2841632A32354A00F37554 /* Legs.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Legs.obj; sourceTree = "<group>"; };
 		ED2841642A32354A00F37554 /* Legs.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Legs.scn; sourceTree = "<group>"; };
-		ED2841672A32355500F37554 /* Boots.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Boots.scn; sourceTree = "<group>"; };
 		ED2841682A32355500F37554 /* Boots.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Boots.obj; sourceTree = "<group>"; };
 		ED28416B2A32356900F37554 /* Armor.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Armor.obj; sourceTree = "<group>"; };
 		ED28416C2A32356A00F37554 /* Armor.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Armor.scn; sourceTree = "<group>"; };
@@ -861,16 +889,20 @@
 			children = (
 				ED2841462A32341800F37554 /* Texture */,
 				ED2841572A32351200F37554 /* Widowmaker.obj */,
-				ED2841582A32351300F37554 /* Widowmaker.scn */,
+				12AB49F02A3527FC002DD25B /* Widowmaker.scn */,
 				ED28415B2A32352900F37554 /* Weapon.obj */,
 				ED28415C2A32352900F37554 /* Weapon.scn */,
 				ED2841602A32353300F37554 /* Helmet.obj */,
-				ED28415F2A32353200F37554 /* Helmet.scn */,
+				12AB49DA2A34DE86002DD25B /* Helmet.scn */,
 				ED2841632A32354A00F37554 /* Legs.obj */,
 				ED2841642A32354A00F37554 /* Legs.scn */,
 				ED2841682A32355500F37554 /* Boots.obj */,
-				ED2841672A32355500F37554 /* Boots.scn */,
+				12AB49DC2A34DF39002DD25B /* Boots.scn */,
 				ED28416B2A32356900F37554 /* Armor.obj */,
+				12AB49EA2A34E638002DD25B /* Doomfist.obj */,
+				12AB49EC2A34E6C4002DD25B /* Doomfist.scn */,
+				12AB49D02A34DC8F002DD25B /* Tracer.obj */,
+				12AB49E02A34DF96002DD25B /* Tracer.scn */,
 				ED28416C2A32356A00F37554 /* Armor.scn */,
 				ED28416F2A32357700F37554 /* JunkerQueen.obj */,
 				ED2841702A32357800F37554 /* JunkerQueen.scn */,
@@ -881,6 +913,14 @@
 		ED2841462A32341800F37554 /* Texture */ = {
 			isa = PBXGroup;
 			children = (
+				12AB49D82A34DE31002DD25B /* Tracer Hair D.png */,
+				12AB49D62A34DE2A002DD25B /* Tracer Goggles Lens D.png */,
+				12AB49DE2A34DF67002DD25B /* Tracer Rings D.png */,
+				12AB49D22A34DDB4002DD25B /* Tracer Body D.png */,
+				12AB49E62A34E485002DD25B /* Doomfist_Eye_D.png */,
+				12AB49E42A34E480002DD25B /* Doomfist_D.png */,
+				12AB49D42A34DE1B002DD25B /* Tracer Eyes D.png */,
+				12AB49E82A34E48B002DD25B /* Doomfist_Fist_D.png */,
 				ED28414D2A32344800F37554 /* 12307_Boots_diffuse.jpg */,
 				ED28414E2A32344800F37554 /* 13586_Steel.jpg */,
 				ED28414A2A32344700F37554 /* 13601_Greaves_Armor_ver_C_holder_diff.jpg */,
@@ -943,11 +983,11 @@
 				ED243FCF2A264FBA00309A71 /* MainView.swift */,
 				ED243FD32A26A13800309A71 /* Profile.swift */,
 				ED243FD12A26502C00309A71 /* HeroList.swift */,
-				ED6A40D02A230F43009564D1 /* Equipment.swift */,
 				ED6A40CE2A230F0B009564D1 /* Levels.swift */,
 				ED6A40D32A230F62009564D1 /* GifEnemy.swift */,
 				ED6A40D72A231087009564D1 /* DetailEnemy.swift */,
 				ED6A40D52A231017009564D1 /* LifeBar.swift */,
+				12AB49F42A362584002DD25B /* RewardsView.swift */,
 				ED25739D2A24168C00F6851E /* GameView.swift */,
 				ED6A40CA2A230DC4009564D1 /* GameScene.swift */,
 				ED6A40CC2A230EA7009564D1 /* 3D_Game.scn */,
@@ -968,6 +1008,8 @@
 				ED243FD52A26C80E00309A71 /* Question.swift */,
 				ED243FDA2A27142800309A71 /* Singleton.swift */,
 				ED2841752A32368E00F37554 /* ChampionInfo.swift */,
+				ED6A40D02A230F43009564D1 /* Equipment.swift */,
+				12AB49EE2A34EFDB002DD25B /* Materials.swift */,
 				ED2841772A3236CD00F37554 /* Index.swift */,
 			);
 			path = Model;
@@ -1119,7 +1161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED3DAA672A24613B00B60527 /* pm0383_00_BodyA1.png in Resources */,
-				ED2841612A32353300F37554 /* Helmet.scn in Resources */,
 				ED2841592A32351300F37554 /* Widowmaker.obj in Resources */,
 				ED2574002A24227700F6851E /* BodyA1_0.png in Resources */,
 				ED3DA9F92A243F7B00B60527 /* etxm_sp_barrier03.png in Resources */,
@@ -1151,7 +1192,6 @@
 				ED3DAA3A2A2460DA00B60527 /* pm0484_00_BodyB1.png in Resources */,
 				ED2573ED2A24224D00F6851E /* blastoise.obj in Resources */,
 				ED3DAA792A24615B00B60527 /* pm0386_13_BodyB1.png in Resources */,
-				ED2841692A32355500F37554 /* Boots.scn in Resources */,
 				ED3DAA1C2A2460A000B60527 /* pm0486_00_BodyB1.png in Resources */,
 				ED3DA9BC2A243EA000B60527 /* latias.obj in Resources */,
 				ED3DA9E62A243F5B00B60527 /* pm0493_11_Eye1.png in Resources */,
@@ -1164,7 +1204,9 @@
 				ED3DA9E22A243F5200B60527 /* arceus.obj in Resources */,
 				ED2574202A2422C000F6851E /* pm0130_00_BodyA1.png in Resources */,
 				ED2574392A24258300F6851E /* pm0381_00_BodyA1.png in Resources */,
+				12AB49F12A3527FC002DD25B /* Widowmaker.scn in Resources */,
 				ED3DA9C82A243EB200B60527 /* pm0249_00_Eye1.png in Resources */,
+				12AB49DF2A34DF67002DD25B /* Tracer Rings D.png in Resources */,
 				ED3DAA152A24607500B60527 /* regirock.obj in Resources */,
 				ED2573F72A24226700F6851E /* machamp.obj in Resources */,
 				ED3DAA5D2A24612D00B60527 /* pm0485_00_BodyC1.png in Resources */,
@@ -1175,6 +1217,7 @@
 				ED2841542A32344800F37554 /* 13601_Greaves_Armor_ver_C_metal_diff.jpg in Resources */,
 				ED3DAA302A2460C800B60527 /* pm0384_00_BodyA1.png in Resources */,
 				ED3DA9E12A243F5200B60527 /* arceus.gif in Resources */,
+				12AB49E92A34E48B002DD25B /* Doomfist_Fist_D.png in Resources */,
 				ED2573EC2A24224D00F6851E /* blastoise.gif in Resources */,
 				ED3DAA392A2460DA00B60527 /* pm0484_00_Eye1.png in Resources */,
 				ED2573FF2A24227700F6851E /* BodyB1_0.png in Resources */,
@@ -1201,6 +1244,7 @@
 				ED2574372A24258300F6851E /* pm0381_00_BodyB1.png in Resources */,
 				ED2573C52A2420BB00F6851E /* pm0145_00_BodyB1.png in Resources */,
 				ED2574222A2422C000F6851E /* gyarados.gif in Resources */,
+				12AB49D52A34DE1B002DD25B /* Tracer Eyes D.png in Resources */,
 				ED28416A2A32355500F37554 /* Boots.obj in Resources */,
 				ED3DA9D42A243ED900B60527 /* pm0725_00_BodyA1.png in Resources */,
 				ED3DAA062A24416C00B60527 /* Bungee-Regular.ttf in Resources */,
@@ -1230,6 +1274,7 @@
 				ED2841502A32344800F37554 /* Widow Body D.png in Resources */,
 				ED3DAA512A24611500B60527 /* pm0382_00_Eye1.png in Resources */,
 				ED2573E02A2421F700F6851E /* venusaur.gif in Resources */,
+				12AB49D12A34DC8F002DD25B /* Tracer.obj in Resources */,
 				ED3DA9E52A243F5B00B60527 /* pm0493_11_Body1.png in Resources */,
 				ED3DAA662A24613B00B60527 /* pm0383_00_BodyB1.png in Resources */,
 				ED3DAA442A2460EC00B60527 /* pm0376_00_Eye1_NoAlpha.png in Resources */,
@@ -1241,10 +1286,10 @@
 				ED3DAA252A2460B800B60527 /* pm0378_00_BodyA1.png in Resources */,
 				ED3DA9DC2A243F4300B60527 /* pm0483_00_Eye1.png in Resources */,
 				ED2573F62A24226700F6851E /* pm0068_00_BodyA1.png in Resources */,
-				ED28415A2A32351300F37554 /* Widowmaker.scn in Resources */,
 				ED3DA9DA2A243F4300B60527 /* dialga.gif in Resources */,
 				ED3DAA452A2460EC00B60527 /* metagross.obj in Resources */,
 				ED3DAA632A24613B00B60527 /* groudon.obj in Resources */,
+				12AB49EB2A34E638002DD25B /* Doomfist.obj in Resources */,
 				ED3DAA032A243F7B00B60527 /* hikousen.png in Resources */,
 				ED2573D22A2420E300F6851E /* pm0006_00_BodyB1.png in Resources */,
 				ED243FC22A2642A700309A71 /* metagross.gif in Resources */,
@@ -1257,6 +1302,7 @@
 				ED2573D42A2420E300F6851E /* pm0006_00_FireCoreA1.png in Resources */,
 				ED3DAA372A2460DA00B60527 /* palkia.obj in Resources */,
 				ED2573EE2A24224D00F6851E /* pm0009_00_BodyB1.png in Resources */,
+				12AB49D92A34DE31002DD25B /* Tracer Hair D.png in Resources */,
 				ED2573EF2A24224D00F6851E /* pm0009_00_Eye1.png in Resources */,
 				ED3DAA432A2460EC00B60527 /* pm0376_00_BodyB1.png in Resources */,
 				ED3DAA142A24607500B60527 /* pm0377_00_BodyA1.png in Resources */,
@@ -1270,6 +1316,7 @@
 				ED3DA9C52A243EB200B60527 /* lugia.obj in Resources */,
 				ED251A402A28D8F60092D20B /* PressStart2P-Regular.ttf in Resources */,
 				ED3DA9D02A243ED900B60527 /* pm0725_00_EyeA1.png in Resources */,
+				12AB49DB2A34DE86002DD25B /* Helmet.scn in Resources */,
 				ED3DAA4E2A24611500B60527 /* kyogre.obj in Resources */,
 				ED3DA9BF2A243EA000B60527 /* pm0380_00_Eye1.png in Resources */,
 				ED2D3CAC2A30145A007B0FE7 /* GoogleService-Info.plist in Resources */,
@@ -1277,6 +1324,7 @@
 				ED2841712A32357800F37554 /* JunkerQueen.obj in Resources */,
 				ED3DAA002A243F7B00B60527 /* spa_roof00.png in Resources */,
 				ED25740A2A24228400F6851E /* pm0243_00_BodyA1.png in Resources */,
+				12AB49E12A34DF96002DD25B /* Tracer.scn in Resources */,
 				ED3DAA412A2460EC00B60527 /* pm0376_00_BodyC1.png in Resources */,
 				ED2574212A2422C000F6851E /* gyarados.obj in Resources */,
 				ED3DAA382A2460DA00B60527 /* pm0484_00_BodyC.png in Resources */,
@@ -1288,15 +1336,19 @@
 				ED2574132A2422A800F6851E /* pm0244_00_BodyB1.png in Resources */,
 				ED2574362A24258300F6851E /* pm0381_00_Eye1.png in Resources */,
 				ED3DAA3B2A2460DA00B60527 /* pm0484_00_BodyA1.png in Resources */,
+				12AB49E72A34E485002DD25B /* Doomfist_Eye_D.png in Resources */,
 				ED3DA9BE2A243EA000B60527 /* pm0380_00_Mouth1.png in Resources */,
 				ED6A40BE2A230CFF009564D1 /* Preview Assets.xcassets in Resources */,
 				ED2574142A2422A800F6851E /* pm0244_00_Eye1.png in Resources */,
 				ED3DAA022A243F7B00B60527 /* goalnet.png in Resources */,
+				12AB49ED2A34E6C4002DD25B /* Doomfist.scn in Resources */,
 				ED3DAA2D2A2460C800B60527 /* rayquaza.obj in Resources */,
 				ED28415E2A32352900F37554 /* Weapon.scn in Resources */,
 				ED3DAA802A24616D00B60527 /* pm0491_00_BodyB1.png in Resources */,
 				ED2574382A24258300F6851E /* pm0381_00_Mouth1.png in Resources */,
+				12AB49E52A34E480002DD25B /* Doomfist_D.png in Resources */,
 				ED3DA9F62A243F7B00B60527 /* spa_stadium00.png in Resources */,
+				12AB49D32A34DDB4002DD25B /* Tracer Body D.png in Resources */,
 				ED3DAA112A24607500B60527 /* pm0377_00_BodyB1.png in Resources */,
 				ED3DAA522A24611500B60527 /* pm0382_00_BodyB1.png in Resources */,
 				ED243FC42A2642B000309A71 /* kyogre.gif in Resources */,
@@ -1308,6 +1360,7 @@
 				ED2841662A32354A00F37554 /* Legs.scn in Resources */,
 				ED3DAA6D2A24614800B60527 /* pm0487_11_BodyA1.png in Resources */,
 				ED3DAA0A2A24418300B60527 /* NerkoOne-Regular.ttf in Resources */,
+				12AB49DD2A34DF39002DD25B /* Boots.scn in Resources */,
 				ED3DA9DE2A243F4300B60527 /* pm0483_00_BodyA1.png in Resources */,
 				ED2573D12A2420E300F6851E /* pm0006_00_Eye1.png in Resources */,
 				ED25741E2A2422C000F6851E /* pm0130_00_Iris1.png in Resources */,
@@ -1317,6 +1370,7 @@
 				ED3DAA242A2460B800B60527 /* regice.obj in Resources */,
 				ED3DA9FD2A243F7B00B60527 /* spa_cloud00.png in Resources */,
 				ED6A40BB2A230CFF009564D1 /* Assets.xcassets in Resources */,
+				12AB49D72A34DE2A002DD25B /* Tracer Goggles Lens D.png in Resources */,
 				ED3DA9FE2A243F7B00B60527 /* spa_prop01.png in Resources */,
 				ED2573F82A24226700F6851E /* machamp.gif in Resources */,
 				ED3DA9D12A243ED900B60527 /* pm0725_00_Iris1.png in Resources */,
@@ -1330,6 +1384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AB49EF2A34EFDB002DD25B /* Materials.swift in Sources */,
 				ED243FD62A26C80E00309A71 /* Question.swift in Sources */,
 				ED6A40CB2A230DC4009564D1 /* GameScene.swift in Sources */,
 				ED243FD02A264FBA00309A71 /* MainView.swift in Sources */,
@@ -1352,6 +1407,7 @@
 				ED2573A02A241A2B00F6851E /* Enemy.swift in Sources */,
 				ED6A40D82A231087009564D1 /* DetailEnemy.swift in Sources */,
 				ED3C748E2A314B1800C6AE63 /* LogInView.swift in Sources */,
+				12AB49F52A362584002DD25B /* RewardsView.swift in Sources */,
 				ED243FD22A26502C00309A71 /* HeroList.swift in Sources */,
 				ED3C748C2A310C7800C6AE63 /* SignUpView.swift in Sources */,
 				ED6A40D62A231017009564D1 /* LifeBar.swift in Sources */,
