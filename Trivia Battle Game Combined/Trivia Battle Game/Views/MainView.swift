@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 struct MainView: View {
+    
+    private let fireDBHelper = FireDBHelper.getInstance() ?? FireDBHelper(store: Firestore.firestore())
+    
     var body: some View {
 //        NavigationView{
             TabView{
@@ -16,7 +21,7 @@ struct MainView: View {
 //                    Image("Champion")
 //                        .renderingMode(.template)
 //                }
-                MainCraftChampView().tabItem{
+                MainCraftChampView().environmentObject(fireDBHelper).tabItem{
                     Text("Champion")
                     Image("Champion")
                         .renderingMode(.template)
