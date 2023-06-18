@@ -29,7 +29,7 @@ struct MainCraftChampView: View {
         }
        .onAppear{
            self.fireDBHelper.getMaterials()
-//           self.fireDBHelper.getProfile()
+           self.fireDBHelper.getSelectedChampIndex()
        }
     }
 

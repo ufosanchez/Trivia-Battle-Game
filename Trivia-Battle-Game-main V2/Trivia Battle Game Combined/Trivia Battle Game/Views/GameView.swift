@@ -28,6 +28,8 @@ struct GameView: View {
     @State private var message = ""
     @State private var showErrorAlert : Bool = false
     
+    @State private var linkSelection : Int? = nil
+    
     var singleton = Singleton.shared
     
     @Environment(\.dismiss) private var dismiss
@@ -38,6 +40,8 @@ struct GameView: View {
     
     var body: some View {
         ZStack{
+            
+            NavigationLink(destination: RewardsView().environmentObject(fireDBHelper), tag: 1, selection: self.$linkSelection){}
             
             SceneView(scene: scene, options: .autoenablesDefaultLighting)
                 .ignoresSafeArea()
@@ -383,7 +387,8 @@ struct GameView: View {
 
         self.fireDBHelper.updateDataProfileGame(newLevel: self.fireDBHelper.user.db_Level + 1, newQuestions: 10, newGames: self.fireDBHelper.user.db_Games + 1, newCorrectQuestions: 10)
 
-        dismiss()
+        self.linkSelection = 1
+        //dismiss()
     }
     
 }// GameView View ends

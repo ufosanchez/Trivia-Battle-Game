@@ -15,7 +15,12 @@ struct RewardsView: View {
     @State private var isButtonClicked = false
     @State private var rewardsCounts = [0, 0, 0, 0]
     
+    @State private var linkSelection : Int? = nil
+    
     var body: some View {
+        NavigationLink(destination: MainView().environmentObject(fireDBHelper), tag: 1, selection: self.$linkSelection){}
+
+        
         VStack {
             Text("Congratulations!").foregroundColor(.blue)
                 .font(Font.custom("Baskerville", size: 30)).bold()
@@ -40,7 +45,7 @@ struct RewardsView: View {
                     self.isButtonClicked = true
                     print(self.rewardsCounts)
                     
-                    //self.updateMaterials()
+                    self.updateMaterials()
                 }) {
                     Text("Get Rewards")
                         .padding()
@@ -51,6 +56,7 @@ struct RewardsView: View {
             } else {
                 Button(action: {
                     //Go back to main menu
+                    self.linkSelection = 1
                 }) {
                     Text("Return to menu")
                         .padding()
@@ -64,6 +70,7 @@ struct RewardsView: View {
         .padding(20)
         .background(LinearGradient( colors: [.yellow, .orange], startPoint: .topLeading, endPoint: .bottomTrailing)
             .edgesIgnoringSafeArea(.all))
+        .navigationBarBackButtonHidden(true)
     }
     
     func generateRandomArray() -> [String] {
@@ -85,10 +92,10 @@ struct RewardsView: View {
             }
         }
     func updateMaterials () {
-        self.fireDBHelper.materials.pCloth += self.rewardsCounts[0]
-        self.fireDBHelper.materials.pWood += self.rewardsCounts[1]
-        self.fireDBHelper.materials.pMetal += self.rewardsCounts[2]
-        self.fireDBHelper.materials.pStone += self.rewardsCounts[3]
+        self.fireDBHelper.materials.mCloth += self.rewardsCounts[0]
+        self.fireDBHelper.materials.mWood += self.rewardsCounts[1]
+        self.fireDBHelper.materials.mMetal += self.rewardsCounts[2]
+        self.fireDBHelper.materials.mStone += self.rewardsCounts[3]
         
         self.fireDBHelper.updateMaterials(materialsToUpdate: self.fireDBHelper.materials, equipmentToUpdate: self.fireDBHelper.equipments)
     }

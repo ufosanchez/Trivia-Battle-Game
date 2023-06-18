@@ -11,18 +11,18 @@ import FirebaseFirestoreSwift
 struct Materials : Codable, Hashable{
     
     @DocumentID var id : String? = UUID().uuidString
-    var pMetal : Int = 0
-    var pCloth : Int = 0
-    var pWood : Int = 0
-    var pStone : Int = 0
+    var mMetal : Int = 0
+    var mCloth : Int = 0
+    var mWood : Int = 0
+    var mStone : Int = 0
     
     init(){
         
     }
     init(metal: Int, cloth: Int, wood: Int, stone: Int){
-        self.pMetal = metal
-        self.pWood = wood
-        self.pCloth = cloth
-        self.pStone = stone 
+        self.mMetal = metal
+        self.mWood = wood
+        self.mCloth = cloth
+        self.mStone = stone 
     }
 }

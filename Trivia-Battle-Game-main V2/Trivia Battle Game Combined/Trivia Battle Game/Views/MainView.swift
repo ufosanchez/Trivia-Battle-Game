@@ -21,7 +21,7 @@ struct MainView: View {
                     Image("Champion")
                         .renderingMode(.template)
                 }
-                Levels().tabItem{
+                Levels().environmentObject(fireDBHelper).tabItem{
                     Text("Levels")
                     Image("Enemy")
                         .renderingMode(.template)

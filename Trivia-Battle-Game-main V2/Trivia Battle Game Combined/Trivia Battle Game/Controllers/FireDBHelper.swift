@@ -13,22 +13,25 @@ class FireDBHelper : ObservableObject{
     @Published var materials = Materials()
     @Published var equipments = Equipment()
     @Published var user = UserProfile()
+    @Published var selectedIndex = Int()
     
     private let store : Firestore
     private static var shared : FireDBHelper?
     
     var loggedInUserEmail : String = ""
     
-    private let FIELD_CLOTH : String = "pCloth"
-    private let FIELD_WOOD : String = "pWood"
-    private let FIELD_METAL: String = "pMetal"
-    private let FIELD_STONE : String = "pStone"
+    private let FIELD_CLOTH : String = "mCloth"
+    private let FIELD_WOOD : String = "mWood"
+    private let FIELD_METAL: String = "mMetal"
+    private let FIELD_STONE : String = "mStone"
     
-    private let FIELD_WEAPON : String = "pWeapon"
-    private let FIELD_HELMET : String = "pHelmet"
-    private let FIELD_ARMOR: String = "pArmor"
-    private let FIELD_LEGS : String = "pLegs"
-    private let FIELD_BOOTS : String = "pBoots"
+    private let FIELD_WEAPON : String = "eWeapon"
+    private let FIELD_HELMET : String = "eHelmet"
+    private let FIELD_ARMOR: String = "eArmor"
+    private let FIELD_LEGS : String = "eLegs"
+    private let FIELD_BOOTS : String = "eBoots"
+    
+    private let FIELD_CHAMPINDEX : String = "pChampIndex"
     
     private let FIELD_USERNAME : String = "db_Username"
     private let FIELD_LEVEL : String = "db_Level"
@@ -115,16 +118,16 @@ class FireDBHelper : ObservableObject{
                         print("Document data was empty.")
                         return
                     }
-                    self.materials.pMetal = data["pMetal"] as? Int ?? 0
-                    self.materials.pWood = data["pWood"] as? Int ?? 0
-                    self.materials.pStone = data["pStone"] as? Int ?? 0
-                    self.materials.pCloth = data ["pCloth"] as? Int ?? 0
+                    self.materials.mMetal = data["mMetal"] as? Int ?? 0
+                    self.materials.mWood = data["mWood"] as? Int ?? 0
+                    self.materials.mStone = data["mStone"] as? Int ?? 0
+                    self.materials.mCloth = data ["mCloth"] as? Int ?? 0
                     
-                    self.equipments.pWeapon = data["pWeapon"] as? Int ?? 1
-                    self.equipments.pHelmet = data["pHelmet"] as? Int ?? 1
-                    self.equipments.pArmor = data["pArmor"] as? Int ?? 1
-                    self.equipments.pLegs = data["pLegs"] as? Int ?? 1
-                    self.equipments.pBoots = data["pBoots"] as? Int ?? 1
+                    self.equipments.eWeapon = data["eWeapon"] as? Int ?? 1
+                    self.equipments.eHelmet = data["eHelmet"] as? Int ?? 1
+                    self.equipments.eArmor = data["eArmor"] as? Int ?? 1
+                    self.equipments.eLegs = data["eLegs"] as? Int ?? 1
+                    self.equipments.eBoots = data["eBoots"] as? Int ?? 1
                     //                    print("Current data: \(data)")
                     //                    print("Current data: \(data["pWeapon"] as? Int ?? 0)")
                     //                    print("Current data: \(data["db_Username"] as? String ?? "NA")")
@@ -145,15 +148,15 @@ class FireDBHelper : ObservableObject{
         docRef.getDocument { [self] (document, error) in
             if let document = document, document.exists {
                 docRef
-                    .updateData([FIELD_CLOTH : materialsToUpdate.pCloth,
-                                 FIELD_METAL : materialsToUpdate.pMetal,
-                                   FIELD_WOOD: materialsToUpdate.pWood,
-                                 FIELD_STONE : materialsToUpdate.pStone,
-                                FIELD_WEAPON : equipmentToUpdate.pWeapon,
-                                FIELD_HELMET : equipmentToUpdate.pHelmet,
-                                 FIELD_ARMOR : equipmentToUpdate.pArmor,
-                                  FIELD_LEGS : equipmentToUpdate.pLegs,
-                                 FIELD_BOOTS : equipmentToUpdate.pBoots]) { error in
+                    .updateData([FIELD_CLOTH : materialsToUpdate.mCloth,
+                                 FIELD_METAL : materialsToUpdate.mMetal,
+                                   FIELD_WOOD: materialsToUpdate.mWood,
+                                 FIELD_STONE : materialsToUpdate.mStone,
+                                FIELD_WEAPON : equipmentToUpdate.eWeapon,
+                                FIELD_HELMET : equipmentToUpdate.eHelmet,
+                                 FIELD_ARMOR : equipmentToUpdate.eArmor,
+                                  FIELD_LEGS : equipmentToUpdate.eLegs,
+                                 FIELD_BOOTS : equipmentToUpdate.eBoots]) { error in
                         if let error = error {
                             print(#function, "Unable to update document : \(error)")
                         } else {
@@ -166,15 +169,15 @@ class FireDBHelper : ObservableObject{
                     try self.store
                         .collection(COLLECTION_USER)
                         .document(loggedInUserEmail)
-                        .setData ([FIELD_CLOTH : materialsToUpdate.pCloth,
-                                   FIELD_METAL : materialsToUpdate.pMetal,
-                                     FIELD_WOOD: materialsToUpdate.pWood,
-                                   FIELD_STONE : materialsToUpdate.pStone,
-                                  FIELD_WEAPON : equipmentToUpdate.pWeapon,
-                                  FIELD_HELMET : equipmentToUpdate.pHelmet,
-                                   FIELD_ARMOR : equipmentToUpdate.pArmor,
-                                    FIELD_LEGS : equipmentToUpdate.pLegs,
-                                   FIELD_BOOTS : equipmentToUpdate.pBoots])
+                        .setData ([FIELD_CLOTH : materialsToUpdate.mCloth,
+                                   FIELD_METAL : materialsToUpdate.mMetal,
+                                     FIELD_WOOD: materialsToUpdate.mWood,
+                                   FIELD_STONE : materialsToUpdate.mStone,
+                                  FIELD_WEAPON : equipmentToUpdate.eWeapon,
+                                  FIELD_HELMET : equipmentToUpdate.eHelmet,
+                                   FIELD_ARMOR : equipmentToUpdate.eArmor,
+                                    FIELD_LEGS : equipmentToUpdate.eLegs,
+                                   FIELD_BOOTS : equipmentToUpdate.eBoots])
                 } catch let error as NSError {
                     print(#function, "Unable to add document to firestore : \(error)")
                 }
@@ -206,11 +209,11 @@ class FireDBHelper : ObservableObject{
                                     FIELD_WOOD: 0,
                                   FIELD_STONE : 0,
                                
-                                 FIELD_WEAPON : 0,
-                                 FIELD_HELMET : 0,
-                                  FIELD_ARMOR : 0,
-                                   FIELD_LEGS : 0,
-                                  FIELD_BOOTS : 0])
+                                 FIELD_WEAPON : 1,
+                                 FIELD_HELMET : 1,
+                                  FIELD_ARMOR : 1,
+                                   FIELD_LEGS : 1,
+                                  FIELD_BOOTS : 1])
             }catch let error as NSError{
                 print(#function, "Unable to add document to firestore : \(error)")
             }
@@ -275,6 +278,66 @@ class FireDBHelper : ObservableObject{
                         }
                 }
             }
+        }
+    }
+    
+    func updateSelectedChampIndex (indexToUdate: Int) {
+        self.loggedInUserEmail = UserDefaults.standard.string(forKey: "KEY_EMAIL") ?? ""
+        
+        
+        let docRef = self.store
+            .collection(COLLECTION_USER)
+            .document(loggedInUserEmail)
+        
+        
+        docRef.getDocument { [self] (document, error) in
+            if let document = document, document.exists {
+                docRef
+                    .updateData([FIELD_CHAMPINDEX : indexToUdate]) { error in
+                        if let error = error {
+                            print(#function, "Unable to update document : \(error)")
+                        } else {
+                            print(#function, "Successfully update document")
+                        }
+                    }
+            } else {
+                print("Document does not exist")
+                do {
+                    try self.store
+                        .collection(COLLECTION_USER)
+                        .document(loggedInUserEmail)
+                        .setData ([FIELD_CHAMPINDEX : indexToUdate])
+                } catch let error as NSError {
+                    print(#function, "Unable to add document to firestore : \(error)")
+                }
+            }
+        }
+    }
+    
+    func getSelectedChampIndex(){
+        
+        self.loggedInUserEmail = UserDefaults.standard.string(forKey: "KEY_EMAIL") ?? ""
+        print("The user is : \(self.loggedInUserEmail)")
+        
+        if (loggedInUserEmail.isEmpty){
+            print(#function, "Logged in user not identified")
+        }
+        else{
+            self.store
+                .collection(COLLECTION_USER)
+                .document(loggedInUserEmail)
+                .addSnapshotListener { documentSnapshot, error in
+                    guard let document = documentSnapshot else {
+                        print("Error fetching document: \(error!)")
+                        return
+                    }
+                    guard let data = document.data() else {
+                        print("Document data was empty.")
+                        return
+                    }
+                    self.selectedIndex = data["pChampIndex"] as? Int ?? 0
+
+                }
         }
     }
 }

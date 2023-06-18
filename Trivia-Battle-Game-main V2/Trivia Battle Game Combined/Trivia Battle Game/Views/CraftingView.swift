@@ -170,16 +170,16 @@ struct CraftingView: View {
         .onAppear{
             self.currentIndex = self.index.num
             
-            self.inventory[0] = self.fireDBHelper.materials.pCloth
-            self.inventory[1] = self.fireDBHelper.materials.pWood
-            self.inventory[2] = self.fireDBHelper.materials.pMetal
-            self.inventory[3] = self.fireDBHelper.materials.pStone
+            self.inventory[0] = self.fireDBHelper.materials.mCloth
+            self.inventory[1] = self.fireDBHelper.materials.mWood
+            self.inventory[2] = self.fireDBHelper.materials.mMetal
+            self.inventory[3] = self.fireDBHelper.materials.mStone
             
-            self.levelList[0] = self.fireDBHelper.equipments.pWeapon
-            self.levelList[1] = self.fireDBHelper.equipments.pHelmet
-            self.levelList[2] = self.fireDBHelper.equipments.pArmor
-            self.levelList[3] = self.fireDBHelper.equipments.pLegs
-            self.levelList[4] = self.fireDBHelper.equipments.pBoots
+            self.levelList[0] = self.fireDBHelper.equipments.eWeapon
+            self.levelList[1] = self.fireDBHelper.equipments.eHelmet
+            self.levelList[2] = self.fireDBHelper.equipments.eArmor
+            self.levelList[3] = self.fireDBHelper.equipments.eLegs
+            self.levelList[4] = self.fireDBHelper.equipments.eBoots
         }
 
         
@@ -195,16 +195,16 @@ struct CraftingView: View {
             self.inventory[3] -= self.req_materials[self.currentIndex][3]
             
             
-            self.fireDBHelper.materials.pCloth = self.inventory[0]
-            self.fireDBHelper.materials.pWood = self.inventory[1]
-            self.fireDBHelper.materials.pMetal = self.inventory[2]
-            self.fireDBHelper.materials.pStone = self.inventory[3]
+            self.fireDBHelper.materials.mCloth = self.inventory[0]
+            self.fireDBHelper.materials.mWood = self.inventory[1]
+            self.fireDBHelper.materials.mMetal = self.inventory[2]
+            self.fireDBHelper.materials.mStone = self.inventory[3]
             
-            self.fireDBHelper.equipments.pWeapon = self.levelList[0]
-            self.fireDBHelper.equipments.pHelmet = self.levelList[1]
-            self.fireDBHelper.equipments.pArmor = self.levelList[2]
-            self.fireDBHelper.equipments.pLegs = self.levelList[3]
-            self.fireDBHelper.equipments.pBoots = self.levelList[4]
+            self.fireDBHelper.equipments.eWeapon = self.levelList[0]
+            self.fireDBHelper.equipments.eHelmet = self.levelList[1]
+            self.fireDBHelper.equipments.eArmor = self.levelList[2]
+            self.fireDBHelper.equipments.eLegs = self.levelList[3]
+            self.fireDBHelper.equipments.eBoots = self.levelList[4]
             
             self.fireDBHelper.updateMaterials(materialsToUpdate: self.fireDBHelper.materials, equipmentToUpdate: self.fireDBHelper.equipments)
             

@@ -23,7 +23,7 @@ struct Levels: View {
             VStack{
                 //                ZStack{
                 
-                NavigationLink(destination: GameView(selectedEnemy: navigationEnemy), tag: 1, selection: self.$linkSelection){}
+                NavigationLink(destination: GameView(selectedEnemy: navigationEnemy).environmentObject(fireDBHelper), tag: 1, selection: self.$linkSelection){}
                 NavigationLink(destination: DetailEnemy(selectedEnemy: navigationEnemy), tag: 2, selection: self.$linkSelection){}
                 
                 Spacer()
