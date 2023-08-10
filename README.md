@@ -24,7 +24,11 @@
   - Blender (Models 3D)
  
 https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/06781eda-07d7-4f19-98d5-5c5e2b0eaf85
-Once the user downloads and opens the application, they could see a splash screen window which will be displayed every time the user opens the application.
+Once the user downloads and opens the application, they could see a splash screen which will be displayed every time the user opens the application.
+
+https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/9a83ecf4-b1ca-4c50-ba2c-fd5d7e7379e0
+Then, the user will be able to find the login or sign up window if the user does not have an account in our application.
+
 
 
 
