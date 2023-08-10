@@ -11,7 +11,6 @@
 		590BE247C9BAEDF9B150FFCF /* Pods_Trivia_Battle_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74292F684B42C64360E1CA92 /* Pods_Trivia_Battle_Game.framework */; };
 		ED1E28BA2A391580001FE69D /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1E28B92A391580001FE69D /* UserProfile.swift */; };
 		ED243FD02A264FBA00309A71 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED243FCF2A264FBA00309A71 /* MainView.swift */; };
-		ED243FD42A26A13800309A71 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED243FD32A26A13800309A71 /* Profile.swift */; };
 		ED243FD62A26C80E00309A71 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED243FD52A26C80E00309A71 /* Question.swift */; };
 		ED243FD92A26DDC700309A71 /* QuestionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED243FD82A26DDC700309A71 /* QuestionHelper.swift */; };
 		ED243FDB2A27142800309A71 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED243FDA2A27142800309A71 /* Singleton.swift */; };
@@ -35,7 +34,6 @@
 		ED6A40B72A230CFE009564D1 /* Trivia_Battle_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A40B62A230CFE009564D1 /* Trivia_Battle_GameApp.swift */; };
 		ED6A40BB2A230CFF009564D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A40BA2A230CFF009564D1 /* Assets.xcassets */; };
 		ED6A40BE2A230CFF009564D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A40BD2A230CFF009564D1 /* Preview Assets.xcassets */; };
-		ED6A40CF2A230F0B009564D1 /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A40CE2A230F0B009564D1 /* Levels.swift */; };
 		ED6A40D12A230F43009564D1 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A40D02A230F43009564D1 /* Equipment.swift */; };
 		ED8E6F682A426404003BFEFC /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E6F672A426404003BFEFC /* NotificationHelper.swift */; };
 /* End PBXBuildFile section */
@@ -47,7 +45,6 @@
 		C76156CD28AAB5DB70CB57B1 /* Pods-Trivia Battle Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia Battle Game.debug.xcconfig"; path = "Target Support Files/Pods-Trivia Battle Game/Pods-Trivia Battle Game.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1E28B92A391580001FE69D /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		ED243FCF2A264FBA00309A71 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		ED243FD32A26A13800309A71 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		ED243FD52A26C80E00309A71 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		ED243FD82A26DDC700309A71 /* QuestionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHelper.swift; sourceTree = "<group>"; };
 		ED243FDA2A27142800309A71 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		ED6A40B62A230CFE009564D1 /* Trivia_Battle_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia_Battle_GameApp.swift; sourceTree = "<group>"; };
 		ED6A40BA2A230CFF009564D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6A40BD2A230CFF009564D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ED6A40CE2A230F0B009564D1 /* Levels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
 		ED6A40D02A230F43009564D1 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		ED8E6F672A426404003BFEFC /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,8 +164,6 @@
 				ED2841792A3236FE00F37554 /* RootView.swift */,
 				ED28417B2A32372300F37554 /* ChampionView.swift */,
 				ED28417F2A32377000F37554 /* ChampionDetailView.swift */,
-				ED6A40CE2A230F0B009564D1 /* Levels.swift */,
-				ED243FD32A26A13800309A71 /* Profile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,8 +319,6 @@
 				ED28417E2A32374B00F37554 /* CraftingView.swift in Sources */,
 				ED3C748A2A30FFC600C6AE63 /* FireAuthHelper.swift in Sources */,
 				ED2573A22A241BC000F6851E /* TypePokemon.swift in Sources */,
-				ED243FD42A26A13800309A71 /* Profile.swift in Sources */,
-				ED6A40CF2A230F0B009564D1 /* Levels.swift in Sources */,
 				ED3C74882A30F37A00C6AE63 /* FireDBHelper.swift in Sources */,
 				ED243FD92A26DDC700309A71 /* QuestionHelper.swift in Sources */,
 				ED2841802A32377000F37554 /* ChampionDetailView.swift in Sources */,

@@ -22,15 +22,15 @@ struct MainView: View {
                     Image("Champion2")
                         .renderingMode(.template)
                 }
-                Levels().environmentObject(fireDBHelper).tabItem{
-                    Text("Levels")
-                    Image("Enemy2")
-                        .renderingMode(.template)
-                }
-                Profile().tabItem{
-                    Text("Profile")
-                    Image(systemName: "person")
-                }
+//                Levels().environmentObject(fireDBHelper).tabItem{
+//                    Text("Levels")
+//                    Image("Enemy2")
+//                        .renderingMode(.template)
+//                }
+//                Profile().tabItem{
+//                    Text("Profile")
+//                    Image(systemName: "person")
+//                }
             }//TabView ends
             .accentColor(.red)
             .onAppear() {
