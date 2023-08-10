@@ -5,6 +5,8 @@
 //  Created by Arnulfo Sánchez on 2023-06-22.
 //
 
+// Create BannerView Adds this type of adds are displayed in levels and game view
+
 import SwiftUI
 import GoogleMobileAds
 
@@ -13,14 +15,10 @@ struct BannerAdView: View {
     let screen : String
     
     var body: some View {
-        if(screen == "Levels"){
-            AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716") // Replace with your ad unit ID
-                .frame(height: 140)
-        }
-        else{
+        
             AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716") // Replace with your ad unit ID
                 .frame(height: 40)
-        }
+        
     }
 }
 
