@@ -36,8 +36,8 @@ struct Levels: View {
                 
                 VStack{
                     
-                    NavigationLink(destination: GameView(selectedEnemy: navigationEnemy).environmentObject(fireDBHelper), tag: 1, selection: self.$linkSelection){}
-                    NavigationLink(destination: DetailEnemy(selectedEnemy: navigationEnemy), tag: 2, selection: self.$linkSelection){}
+//                    NavigationLink(destination: GameView(selectedEnemy: navigationEnemy).environmentObject(fireDBHelper), tag: 1, selection: self.$linkSelection){}
+//                    NavigationLink(destination: DetailEnemy(selectedEnemy: navigationEnemy), tag: 2, selection: self.$linkSelection){}
                     
                     Spacer()
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -53,7 +53,7 @@ struct Levels: View {
                                             .foregroundColor(.black)
                                         
                                         ZStack{
-                                            GifEnemy(currentEnemy.name.lowercased())
+//                                            GifEnemy(currentEnemy.name.lowercased())
                                                 .frame(width: 10500)
                                             
                                             VStack(spacing: 10){
@@ -72,8 +72,8 @@ struct Levels: View {
                                             
                                         }
                                         
-                                        LifeBar(color: Color.red, width: CGFloat(currentEnemy.healt), type_bar: "healt")
-                                        LifeBar(color: Color.green, width: CGFloat(currentEnemy.attack), type_bar: "attack")
+//                                        LifeBar(color: Color.red, width: CGFloat(currentEnemy.healt), type_bar: "healt")
+//                                        LifeBar(color: Color.green, width: CGFloat(currentEnemy.attack), type_bar: "attack")
                                         
                                         HStack(spacing: 50){
                                             Button(action:{
@@ -144,7 +144,7 @@ struct Levels: View {
                                 }
                                 if(((currentEnemy.level % 2) == 0) && currentEnemy.level < 28){
                                     //                                Text("bbbb \(currentEnemy.level)")
-                                    BannerAdView(screen: "Levels")
+//                                    BannerAdView(screen: "Levels")
                                         .frame(width: 320)
                                     
                                 }
