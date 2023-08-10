@@ -301,7 +301,7 @@ struct GameView: View {
 
 
                 for itr in  0..<questionList.count{
-//                    questionList[itr].question = String(htmlEncodedString: questionList[itr].question ?? "NA")//modify HTML string
+                    questionList[itr].question = String(htmlEncodedString: questionList[itr].question ?? "NA")//modify HTML string
 
                     print(questionList[itr].question)
 
@@ -310,7 +310,7 @@ struct GameView: View {
 //                    questionList[itr].incorrect_answers?.shuffle()
                     for itr2 in  0..<(questionList[itr].incorrect_answers?.count ?? 0){
                         
-//                        questionList[itr].incorrect_answers?[itr2] = String(htmlEncodedString: questionList[itr].incorrect_answers?[itr2] ?? "NA") ?? "NA"
+                        questionList[itr].incorrect_answers?[itr2] = String(htmlEncodedString: questionList[itr].incorrect_answers?[itr2] ?? "NA") ?? "NA"
                         
                         print("\(itr) \(questionList[itr].incorrect_answers?[itr2])")
                     }
@@ -428,28 +428,28 @@ struct GameView: View {
     
 }// GameView View ends
 
-//extension String {
-//
-//    init?(htmlEncodedString: String) {
-//
-//        guard let data = htmlEncodedString.data(using: .utf8) else {
-//            return nil
-//        }
-//
-//        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
-//            .documentType: NSAttributedString.DocumentType.html,
-//            .characterEncoding: String.Encoding.utf8.rawValue
-//        ]
-//
-//        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
-//            return nil
-//        }
-//
-//        self.init(attributedString.string)
-//
-//    }
-//
-//}
+extension String {
+
+    init?(htmlEncodedString: String) {
+
+        guard let data = htmlEncodedString.data(using: .utf8) else {
+            return nil
+        }
+
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ]
+
+        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+            return nil
+        }
+
+        self.init(attributedString.string)
+
+    }
+
+}
 
 //struct GameView_Previews: PreviewProvider {
 //    static var previews: some View {
