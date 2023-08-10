@@ -15,10 +15,16 @@ struct BannerAdView: View {
     let screen : String
     
     var body: some View {
-        
+        //i the levels screen will be showed every 2 enemies
+        if(screen == "Levels"){
+            AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716") // Replace with your ad unit ID
+                .frame(height: 140)
+        }
+        //this is displayed in the game view
+        else{
             AdBannerView(adUnitID: "ca-app-pub-3940256099942544/2934735716") // Replace with your ad unit ID
                 .frame(height: 40)
-        
+        }
     }
 }
 
