@@ -186,7 +186,7 @@ struct GameView: View {
                                 HStack(spacing: 50){
                                     VStack(alignment: .leading){
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
                                         }){
                                             Text("A. \(questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -194,7 +194,7 @@ struct GameView: View {
                                         }
                                         
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[2] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[2] ?? "NA")
                                         }){
                                             Text("C. \(questionList[singleton.questionNumber].incorrect_answers?[2] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -203,7 +203,7 @@ struct GameView: View {
                                     }// VStack ends
                                     VStack(alignment: .leading){
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
                                         }){
                                             Text("B. \(questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -211,7 +211,7 @@ struct GameView: View {
                                         }
                                         
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[3] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[3] ?? "NA")
                                         }){
                                             Text("D. \(questionList[singleton.questionNumber].incorrect_answers?[3] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -224,7 +224,7 @@ struct GameView: View {
                                 HStack(spacing: 50){
                                     
                                     Button(action:{
-                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
+                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
                                     }){
                                         Text("A. \(questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")")
                                             .font(.custom("NerkoOne-Regular", size: 17))
@@ -232,7 +232,7 @@ struct GameView: View {
                                     }
                                     
                                     Button(action:{
-                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
+                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
                                     }){
                                         Text("B. \(questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")")
                                             .font(.custom("NerkoOne-Regular", size: 17))
@@ -305,7 +305,7 @@ struct GameView: View {
 
                     print(questionList[itr].question)
 
-                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA")" ) //append answer
+                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA") \u{2713}" ) //append answer
                     
                     questionList[itr].incorrect_answers?.shuffle()
                     for itr2 in  0..<(questionList[itr].incorrect_answers?.count ?? 0){
