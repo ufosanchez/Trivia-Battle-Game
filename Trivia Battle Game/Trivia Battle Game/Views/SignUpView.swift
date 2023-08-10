@@ -144,7 +144,7 @@ struct SignUpView: View {
                             let newUser = UserProfile(username: self.username)
                             UserDefaults.standard.set(self.email, forKey: "KEY_EMAIL")
                             self.fireDBHelper.insertProfile(newUser: newUser)
-                            NotificationHelper.instance.requestAuthorization()
+//                            NotificationHelper.instance.requestAuthorization()
                             self.linkSelection = 1
                         }
                     }
