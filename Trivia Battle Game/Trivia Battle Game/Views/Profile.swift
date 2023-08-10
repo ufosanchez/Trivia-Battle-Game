@@ -26,15 +26,15 @@ struct Profile: View {
     var body: some View {
         
         VStack(spacing: 5){
-            NavigationLink(destination: LogInView(), tag: 1, selection: self.$linkSelection){}
-            NavigationLink(destination: UpdateProfileView(), tag: 2, selection: self.$linkSelection){}
+//            NavigationLink(destination: LogInView(), tag: 1, selection: self.$linkSelection){}
+//            NavigationLink(destination: UpdateProfileView(), tag: 2, selection: self.$linkSelection){}
             
             Text("Profile")
                 .font(.custom("NerkoOne-Regular", size: 35))
                 .foregroundColor(.black)
             
             VStack(spacing: 0){
-                HexagonView(levelUser: self.fireDBHelper.user.db_Level)
+//                HexagonView(levelUser: self.fireDBHelper.user.db_Level)
                 
                 Text(self.fireDBHelper.user.db_Username)
                     .font(.custom("NerkoOne-Regular", size: 30))
