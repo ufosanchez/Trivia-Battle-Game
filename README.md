@@ -40,7 +40,7 @@ https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/128b5b43-7971-
 Once the user is logged in, they will see the champion screen in which they can select a champion among the 4 possible ones, in addition the player will be able to rotate the champion 3D and see the details of each one of the champions.
 Additionally, the user can navigate to the crafting screen which allow the user to level up each of their equipment only if they have the minimum amount of materials.
 
+https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/846c4097-16e6-492e-8d25-b0f0f05828b1
 
-
-
-
+Subsequently the player can navigate to the level screen in which to see each of the enemies go to the details of the enemies as well as the amount of energy that the user presents.
+As can be seen in the video, our application presents two types of advertisements, which are Banner and Interstitial, the Banner is shown on the levels screen and in game: on the other hand, the Interstitial is shown every time the player clicks the "Play" button. now”
