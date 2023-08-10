@@ -1,6 +1,0 @@
-framework module Pods_Trivia_Battle_Game {
-  umbrella header "Pods-Trivia Battle Game-umbrella.h"
-
-  export *
-  module * { export * }
-}
