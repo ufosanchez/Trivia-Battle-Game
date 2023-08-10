@@ -11,15 +11,15 @@
 
 - TECHNOLOGIES
   - Project Management (Jira)
-GitHub (version control)
-SwiftUI
-Firebase (Firestore/Authentication)
-SceneKit (File for Model 3D)
-Google AdMob (Advertisements)
-CocoaPods (standard format for managing external libraries)
-User Notifications
-NavigationView (Navigation Screen)
-Google Fonts (Custom Font)
-WKWebView (Display gif)
-Blender (Models 3D)
+  - GitHub (version control)
+  - SwiftUI
+  - Firebase (Firestore/Authentication)
+  - SceneKit (File for Model 3D)
+  - Google AdMob (Advertisements)
+  - CocoaPods (standard format for managing external libraries)
+  - User Notifications
+  - NavigationView (Navigation Screen)
+  - Google Fonts (Custom Font)
+  - WKWebView (Display gif)
+  - Blender (Models 3D)
 
