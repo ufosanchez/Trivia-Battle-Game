@@ -9,3 +9,17 @@
 
 <p>There are advertisements in the level selection screen and when the user enter a game. The user can check their performance statics such as the percnetage of correct answers from the profile screen. The profile screen also shows their currently selected champion and the highest level the user had completed. The user can also logout and change their information through the profile screen</p>
 
+- TECHNOLOGIES
+  - Project Management (Jira)
+GitHub (version control)
+SwiftUI
+Firebase (Firestore/Authentication)
+SceneKit (File for Model 3D)
+Google AdMob (Advertisements)
+CocoaPods (standard format for managing external libraries)
+User Notifications
+NavigationView (Navigation Screen)
+Google Fonts (Custom Font)
+WKWebView (Display gif)
+Blender (Models 3D)
+
