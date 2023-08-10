@@ -307,7 +307,7 @@ struct GameView: View {
 
 //                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA")" ) //append answer
                     
-//                    questionList[itr].incorrect_answers?.shuffle()
+                    questionList[itr].incorrect_answers?.shuffle()
                     for itr2 in  0..<(questionList[itr].incorrect_answers?.count ?? 0){
                         
 //                        questionList[itr].incorrect_answers?[itr2] = String(htmlEncodedString: questionList[itr].incorrect_answers?[itr2] ?? "NA") ?? "NA"
