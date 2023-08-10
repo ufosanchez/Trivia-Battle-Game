@@ -23,5 +23,5 @@
   - WKWebView (Display gif)
   - Blender (Models 3D)
  
-
+https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/06781eda-07d7-4f19-98d5-5c5e2b0eaf85
 
