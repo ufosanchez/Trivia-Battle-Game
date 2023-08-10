@@ -5,6 +5,8 @@
 //  Created by Arnulfo Sánchez on 2023-06-22.
 //
 
+// Create Interstitial Adds this type of adds are displayed when the user clicks in Play Now
+
 import SwiftUI
 import GoogleMobileAds
 import UIKit
