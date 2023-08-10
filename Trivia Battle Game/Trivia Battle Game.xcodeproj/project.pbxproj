@@ -17,13 +17,8 @@
 		ED243FDB2A27142800309A71 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED243FDA2A27142800309A71 /* Singleton.swift */; };
 		ED2573A02A241A2B00F6851E /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED25739F2A241A2B00F6851E /* Enemy.swift */; };
 		ED2573A22A241BC000F6851E /* TypePokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2573A12A241BC000F6851E /* TypePokemon.swift */; };
-		ED2841742A32365A00F37554 /* MainCraftChampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2841732A32365A00F37554 /* MainCraftChampView.swift */; };
 		ED2841762A32368E00F37554 /* ChampionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2841752A32368E00F37554 /* ChampionInfo.swift */; };
 		ED2841782A3236CD00F37554 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2841772A3236CD00F37554 /* Index.swift */; };
-		ED28417A2A3236FE00F37554 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2841792A3236FE00F37554 /* RootView.swift */; };
-		ED28417C2A32372300F37554 /* ChampionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28417B2A32372300F37554 /* ChampionView.swift */; };
-		ED28417E2A32374B00F37554 /* CraftingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28417D2A32374B00F37554 /* CraftingView.swift */; };
-		ED2841802A32377000F37554 /* ChampionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED28417F2A32377000F37554 /* ChampionDetailView.swift */; };
 		ED2A1F502A44E80B00DD035C /* InterstitialHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2A1F4F2A44E80B00DD035C /* InterstitialHelper.swift */; };
 		ED2D3CAC2A30145A007B0FE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED2D3CAB2A30145A007B0FE7 /* GoogleService-Info.plist */; };
 		ED2D3CAF2A304064007B0FE7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ED2D3CAE2A304064007B0FE7 /* FirebaseAuth */; };
@@ -35,7 +30,6 @@
 		ED6A40B72A230CFE009564D1 /* Trivia_Battle_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A40B62A230CFE009564D1 /* Trivia_Battle_GameApp.swift */; };
 		ED6A40BB2A230CFF009564D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A40BA2A230CFF009564D1 /* Assets.xcassets */; };
 		ED6A40BE2A230CFF009564D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A40BD2A230CFF009564D1 /* Preview Assets.xcassets */; };
-		ED6A40CF2A230F0B009564D1 /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A40CE2A230F0B009564D1 /* Levels.swift */; };
 		ED6A40D12A230F43009564D1 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A40D02A230F43009564D1 /* Equipment.swift */; };
 		ED8E6F682A426404003BFEFC /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E6F672A426404003BFEFC /* NotificationHelper.swift */; };
 /* End PBXBuildFile section */
@@ -53,13 +47,8 @@
 		ED243FDA2A27142800309A71 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		ED25739F2A241A2B00F6851E /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		ED2573A12A241BC000F6851E /* TypePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePokemon.swift; sourceTree = "<group>"; };
-		ED2841732A32365A00F37554 /* MainCraftChampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCraftChampView.swift; sourceTree = "<group>"; };
 		ED2841752A32368E00F37554 /* ChampionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionInfo.swift; sourceTree = "<group>"; };
 		ED2841772A3236CD00F37554 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
-		ED2841792A3236FE00F37554 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		ED28417B2A32372300F37554 /* ChampionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionView.swift; sourceTree = "<group>"; };
-		ED28417D2A32374B00F37554 /* CraftingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingView.swift; sourceTree = "<group>"; };
-		ED28417F2A32377000F37554 /* ChampionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionDetailView.swift; sourceTree = "<group>"; };
 		ED2A1F4F2A44E80B00DD035C /* InterstitialHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialHelper.swift; sourceTree = "<group>"; };
 		ED2D3CAB2A30145A007B0FE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED3C74872A30F37A00C6AE63 /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
@@ -69,7 +58,6 @@
 		ED6A40B62A230CFE009564D1 /* Trivia_Battle_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia_Battle_GameApp.swift; sourceTree = "<group>"; };
 		ED6A40BA2A230CFF009564D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6A40BD2A230CFF009564D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ED6A40CE2A230F0B009564D1 /* Levels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
 		ED6A40D02A230F43009564D1 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		ED8E6F672A426404003BFEFC /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,12 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				ED243FCF2A264FBA00309A71 /* MainView.swift */,
-				ED2841732A32365A00F37554 /* MainCraftChampView.swift */,
-				ED28417D2A32374B00F37554 /* CraftingView.swift */,
-				ED2841792A3236FE00F37554 /* RootView.swift */,
-				ED28417B2A32372300F37554 /* ChampionView.swift */,
-				ED28417F2A32377000F37554 /* ChampionDetailView.swift */,
-				ED6A40CE2A230F0B009564D1 /* Levels.swift */,
 				ED243FD32A26A13800309A71 /* Profile.swift */,
 			);
 			path = Views;
@@ -322,22 +304,16 @@
 				ED243FD02A264FBA00309A71 /* MainView.swift in Sources */,
 				ED2841762A32368E00F37554 /* ChampionInfo.swift in Sources */,
 				ED8E6F682A426404003BFEFC /* NotificationHelper.swift in Sources */,
-				ED28417E2A32374B00F37554 /* CraftingView.swift in Sources */,
 				ED3C748A2A30FFC600C6AE63 /* FireAuthHelper.swift in Sources */,
 				ED2573A22A241BC000F6851E /* TypePokemon.swift in Sources */,
 				ED243FD42A26A13800309A71 /* Profile.swift in Sources */,
-				ED6A40CF2A230F0B009564D1 /* Levels.swift in Sources */,
 				ED3C74882A30F37A00C6AE63 /* FireDBHelper.swift in Sources */,
 				ED243FD92A26DDC700309A71 /* QuestionHelper.swift in Sources */,
-				ED2841802A32377000F37554 /* ChampionDetailView.swift in Sources */,
-				ED2841742A32365A00F37554 /* MainCraftChampView.swift in Sources */,
-				ED28417C2A32372300F37554 /* ChampionView.swift in Sources */,
 				ED2841782A3236CD00F37554 /* Index.swift in Sources */,
 				ED6A40B72A230CFE009564D1 /* Trivia_Battle_GameApp.swift in Sources */,
 				ED2573A02A241A2B00F6851E /* Enemy.swift in Sources */,
 				ED243FDB2A27142800309A71 /* Singleton.swift in Sources */,
 				ED6A40D12A230F43009564D1 /* Equipment.swift in Sources */,
-				ED28417A2A3236FE00F37554 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

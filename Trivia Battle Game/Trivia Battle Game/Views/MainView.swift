@@ -17,16 +17,16 @@ struct MainView: View {
     var body: some View {
 //        NavigationView{
             TabView{
-                MainCraftChampView().environmentObject(fireDBHelper).tabItem{
-                    Text("Champion")
-                    Image("Champion2")
-                        .renderingMode(.template)
-                }
-                Levels().environmentObject(fireDBHelper).tabItem{
-                    Text("Levels")
-                    Image("Enemy2")
-                        .renderingMode(.template)
-                }
+//                MainCraftChampView().environmentObject(fireDBHelper).tabItem{
+//                    Text("Champion")
+//                    Image("Champion2")
+//                        .renderingMode(.template)
+//                }
+//                Levels().environmentObject(fireDBHelper).tabItem{
+//                    Text("Levels")
+//                    Image("Enemy2")
+//                        .renderingMode(.template)
+//                }
                 Profile().tabItem{
                     Text("Profile")
                     Image(systemName: "person")
