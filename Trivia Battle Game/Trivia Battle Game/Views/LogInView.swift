@@ -124,7 +124,7 @@ struct LogInView: View {
                                 print(#function, "Login Succesful")
                                 print(#function, "Welcome \(self.email)")
                                 UserDefaults.standard.set(self.email, forKey: "KEY_EMAIL")
-//                                NotificationHelper.instance.requestAuthorization()
+                                NotificationHelper.instance.requestAuthorization()
                                 self.linkSelection = 2
                             }
                             

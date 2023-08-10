@@ -8,3 +8,21 @@
 import Foundation
 import UserNotifications
 
+class NotificationHelper : ObservableObject {
+    
+    static let instance = NotificationHelper()
+    
+    func requestAuthorization(){
+        let options : UNAuthorizationOptions = [.alert, .sound, .badge ]
+        UNUserNotificationCenter.current().requestAuthorization(options: options) { success, error in
+            if let error = error {
+                print("ERROR : \(error)")
+            } else{
+                print("SUCCESS")
+            }
+        }
+    }
+    
+    
+
+}
