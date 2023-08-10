@@ -186,7 +186,7 @@ struct GameView: View {
                                 HStack(spacing: 50){
                                     VStack(alignment: .leading){
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
                                         }){
                                             Text("A. \(questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -194,7 +194,7 @@ struct GameView: View {
                                         }
                                         
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[2] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[2] ?? "NA")
                                         }){
                                             Text("C. \(questionList[singleton.questionNumber].incorrect_answers?[2] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -203,7 +203,7 @@ struct GameView: View {
                                     }// VStack ends
                                     VStack(alignment: .leading){
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
                                         }){
                                             Text("B. \(questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -211,7 +211,7 @@ struct GameView: View {
                                         }
                                         
                                         Button(action:{
-                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[3] ?? "NA")
+                                            checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[3] ?? "NA")
                                         }){
                                             Text("D. \(questionList[singleton.questionNumber].incorrect_answers?[3] ?? "NA")")
                                                 .font(.custom("NerkoOne-Regular", size: 17))
@@ -224,7 +224,7 @@ struct GameView: View {
                                 HStack(spacing: 50){
                                     
                                     Button(action:{
-                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
+                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")
                                     }){
                                         Text("A. \(questionList[singleton.questionNumber].incorrect_answers?[0] ?? "NA")")
                                             .font(.custom("NerkoOne-Regular", size: 17))
@@ -232,7 +232,7 @@ struct GameView: View {
                                     }
                                     
                                     Button(action:{
-                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA") \u{2713}" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
+                                        checkAnswer(correct_answer: "\(questionList[singleton.questionNumber].correct_answer ?? "NA")" , answer_choosed: questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")
                                     }){
                                         Text("B. \(questionList[singleton.questionNumber].incorrect_answers?[1] ?? "NA")")
                                             .font(.custom("NerkoOne-Regular", size: 17))
@@ -301,16 +301,16 @@ struct GameView: View {
 
 
                 for itr in  0..<questionList.count{
-                    questionList[itr].question = String(htmlEncodedString: questionList[itr].question ?? "NA")//modify HTML string
+//                    questionList[itr].question = String(htmlEncodedString: questionList[itr].question ?? "NA")//modify HTML string
 
                     print(questionList[itr].question)
 
-                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA") \u{2713}" ) //append answer
+//                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA")" ) //append answer
                     
-                    questionList[itr].incorrect_answers?.shuffle()
+//                    questionList[itr].incorrect_answers?.shuffle()
                     for itr2 in  0..<(questionList[itr].incorrect_answers?.count ?? 0){
                         
-                        questionList[itr].incorrect_answers?[itr2] = String(htmlEncodedString: questionList[itr].incorrect_answers?[itr2] ?? "NA") ?? "NA"
+//                        questionList[itr].incorrect_answers?[itr2] = String(htmlEncodedString: questionList[itr].incorrect_answers?[itr2] ?? "NA") ?? "NA"
                         
                         print("\(itr) \(questionList[itr].incorrect_answers?[itr2])")
                     }
@@ -428,28 +428,28 @@ struct GameView: View {
     
 }// GameView View ends
 
-extension String {
-    
-    init?(htmlEncodedString: String) {
-        
-        guard let data = htmlEncodedString.data(using: .utf8) else {
-            return nil
-        }
-        
-        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
-            .documentType: NSAttributedString.DocumentType.html,
-            .characterEncoding: String.Encoding.utf8.rawValue
-        ]
-        
-        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
-            return nil
-        }
-        
-        self.init(attributedString.string)
-        
-    }
-    
-}
+//extension String {
+//
+//    init?(htmlEncodedString: String) {
+//
+//        guard let data = htmlEncodedString.data(using: .utf8) else {
+//            return nil
+//        }
+//
+//        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+//            .documentType: NSAttributedString.DocumentType.html,
+//            .characterEncoding: String.Encoding.utf8.rawValue
+//        ]
+//
+//        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+//            return nil
+//        }
+//
+//        self.init(attributedString.string)
+//
+//    }
+//
+//}
 
 //struct GameView_Previews: PreviewProvider {
 //    static var previews: some View {
