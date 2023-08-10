@@ -31,6 +31,10 @@ https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/9a83ecf4-b1ca-
 
 Then, the user will be able to find the login or sign up window if the user does not have an account in our application.
 
+https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/a1880620-ecf0-48d9-8d9f-86955117824f
+
+When the user opens the application for the first time, it asks the user if they will allow the app to send notifications since our application sends a daily notification at 20:00 in which it invites the player to play again.
+
 
 
 
