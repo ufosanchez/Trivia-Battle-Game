@@ -35,6 +35,11 @@ https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/a1880620-ecf0-
 
 When the user opens the application for the first time, it asks the user if they will allow the app to send notifications since our application sends a daily notification at 20:00 in which it invites the player to play again.
 
+https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/128b5b43-7971-4e02-89af-d58d636f662f
+
+Once the user is logged in, they will see the champion screen in which they can select a champion among the 4 possible ones, in addition the player will be able to rotate the champion 3D and see the details of each one of the champions.
+Additionally, the user can navigate to the crafting screen which allow the user to level up each of their equipment only if they have the minimum amount of materials.
+
 
 
 
