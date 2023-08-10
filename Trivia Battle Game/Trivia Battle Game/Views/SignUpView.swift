@@ -115,13 +115,13 @@ struct SignUpView: View {
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2).foregroundColor(.black))
             }
             
-            Toggle("Remember Me", isOn: self.$remember)
-                .toggleStyle(iOSCheckboxToggleStyle())
-                .foregroundColor(Color.black)
-                .onChange(of: self.remember, perform: {_ in
-                    UserDefaults.standard.set(self.remember, forKey: KEY_REMEMBER)
-                    //print("\(self.remember ? "Yes" : "No")")
-                })
+//            Toggle("Remember Me", isOn: self.$remember)
+//                .toggleStyle(iOSCheckboxToggleStyle())
+//                .foregroundColor(Color.black)
+//                .onChange(of: self.remember, perform: {_ in
+//                    UserDefaults.standard.set(self.remember, forKey: KEY_REMEMBER)
+//                    //print("\(self.remember ? "Yes" : "No")")
+//                })
 
             Button {
                 
@@ -144,7 +144,7 @@ struct SignUpView: View {
                             let newUser = UserProfile(username: self.username)
                             UserDefaults.standard.set(self.email, forKey: "KEY_EMAIL")
                             self.fireDBHelper.insertProfile(newUser: newUser)
-                            NotificationHelper.instance.requestAuthorization()
+//                            NotificationHelper.instance.requestAuthorization()
                             self.linkSelection = 1
                         }
                     }
@@ -158,7 +158,7 @@ struct SignUpView: View {
                     .foregroundColor(.white)
                     .font(.title3)
                     .bold()
-                    .frame(maxWidth: UIScreen.screenWidth/3)
+                    .frame(maxWidth: 300)
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue))
             }
