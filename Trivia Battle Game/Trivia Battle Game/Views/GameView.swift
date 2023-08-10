@@ -305,7 +305,7 @@ struct GameView: View {
 
                     print(questionList[itr].question)
 
-//                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA")" ) //append answer
+                    questionList[itr].incorrect_answers?.append("\(questionList[itr].correct_answer ?? "NA")" ) //append answer
                     
                     questionList[itr].incorrect_answers?.shuffle()
                     for itr2 in  0..<(questionList[itr].incorrect_answers?.count ?? 0){
