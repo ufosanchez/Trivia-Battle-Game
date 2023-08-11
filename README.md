@@ -45,7 +45,7 @@ https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/846c4097-16e6-
 Subsequently the player can navigate to the level screen in which to see each of the enemies go to the details of the enemies as well as the amount of energy that the user presents.
 As can be seen in the video, our application presents two types of advertisements, which are Banner and Interstitial, the Banner is shown on the levels screen and in game: on the other hand, the Interstitial is shown every time the player clicks the "Play" button. now”
 
-
+https://github.com/arnulfo457/Trivia-Battle-Game/assets/125388195/355713df-0140-425b-a5b7-7d97f5f498b1
 
 Once the player sees the warning he will be able to fight the enemy.
 In this video you can see that every time the player answers the question incorrectly the enemy will attack and consequently the player will lose
